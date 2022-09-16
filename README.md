@@ -1,5 +1,7 @@
 # Test React Miloguide
 
+### `Ce projet est préconfiguré avec React, Typescript et TailwindCSS qui sont les principaux outils que nous utilisons pour le frontend chez Miloguide. Ces technologies doivent être utilisées pour compléter l'exercice, c'est le but de l'évaluation.`
+
 Tu dois accomplir la tâche suivante dans le délai que tu veux mais saches que la rapidité de ton retour aura un impact dans l'évaluation générale de la performance.
 
 Points évalués:
