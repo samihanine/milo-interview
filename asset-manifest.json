@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/milo-interview/static/css/main.dc87bc7a.css",
+    "main.js": "/milo-interview/static/js/main.4abe1736.js",
+    "static/js/787.bf7c5e9e.chunk.js": "/milo-interview/static/js/787.bf7c5e9e.chunk.js",
+    "index.html": "/milo-interview/index.html",
+    "main.dc87bc7a.css.map": "/milo-interview/static/css/main.dc87bc7a.css.map",
+    "main.4abe1736.js.map": "/milo-interview/static/js/main.4abe1736.js.map",
+    "787.bf7c5e9e.chunk.js.map": "/milo-interview/static/js/787.bf7c5e9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc87bc7a.css",
+    "static/js/main.4abe1736.js"
+  ]
+}
