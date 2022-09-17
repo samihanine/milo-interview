@@ -1,6 +1,7 @@
 import { Todo } from '../interfaces/Todo';
 import tagsData from '../datas/tags';
 import { isEmpty } from '../utils/util';
+import Button from './Button';
 
 interface InputTodoInterface {
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
@@ -36,16 +37,16 @@ export default function InputTodo(props: InputTodoInterface) {
   };
 
   return (
-    <form onSubmit={addTodo}>
-      <input name="title" id="title" type="text" />
-      <select name="tag">
+    <form className="flex bg-transparent rounded-xl p-5 justify-center mb-3 gap-8" onSubmit={addTodo}>
+      <input className="rounded-xl p-2 outline-none" name="title" id="title" type="text" />
+      <select className="rounded-xl p-2 outline-none" name="tag">
         {tagsData.map((tag, index) => (
           <option key={index} value={tag.name}>
             {tag.name}
           </option>
         ))}
       </select>
-      <button type="submit">Add</button>
+      <Button type="submit">Add</Button>
     </form>
   );
 }

@@ -31,11 +31,18 @@ export default function DisplayTodo(props: DisplayTodoInterface) {
   };
 
   return (
-    <div>
-      <strong>{todo.title}</strong>
-      <input type="checkbox" checked={todo.isCompleted} onChange={updateTodo} />
-      <DisplayTag tag={todo.tag} />
-      <span onClick={deleteTodo}>x</span>
+    <div className={`bg-white p-5 rounded-lg flex justify-between ${todo.isCompleted ? 'opacity-70' : ''}`}>
+      <div className="flex flex-col gap-2">
+        <DisplayTag tag={todo.tag} />
+        <strong className={`text-lg ${todo.isCompleted ? 'line-through text-secondary' : ''}`}>{todo.title}</strong>
+      </div>
+
+      <div className="flex flex-col justify-between">
+        <input className="scale-150" type="checkbox" checked={todo.isCompleted} onChange={updateTodo} />
+        <span className="self-center w-full text-primary font-bold cursor-pointer" onClick={deleteTodo}>
+          x
+        </span>
+      </div>
     </div>
   );
 }

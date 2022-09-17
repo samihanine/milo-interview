@@ -8,5 +8,9 @@ interface DisplayTagInterface {
 export default function DisplayTag(props: DisplayTagInterface) {
   const tag: Tag = props.tag;
 
-  return <span style={{ backgroundColor: `${tag.color}22`, color: tag.color }}>{tag.name}</span>;
+  return (
+    <span className="rounded-lg p-1 w-fit text-sm" style={{ backgroundColor: `${tag.color}22`, color: tag.color }}>
+      {tag.name}
+    </span>
+  );
 }

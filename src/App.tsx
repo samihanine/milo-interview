@@ -13,12 +13,15 @@ function App() {
   }, [todos]);
 
   return (
-    <div className="p-5 text-center flex-col">
-      <h1 className="text-2xl font-bold">Miloguide TODO app</h1>
-      <div className="flex flex-col">
-        <InputTodo todos={todos} setTodos={setTodos} />
+    <div className="p-8 flex flex-col bg-background min-h-screen gap-5">
+      <div className="flex flex-col w-full items-center justify-center">
+        <img alt="miloguide logo" width={50} height={50} src="https://pbs.twimg.com/media/Fc4UupSXkAE86fK?format=png&name=240x240" />
+        <h1 className="text-2xl font-bold">Miloguide TODO App</h1>
       </div>
-      <div>
+
+      <InputTodo todos={todos} setTodos={setTodos} />
+
+      <div className="flex gap-5">
         {tags.map((tag, index) => (
           <SectionTodo key={index} todos={todos} setTodos={setTodos} tag={tag} />
         ))}
